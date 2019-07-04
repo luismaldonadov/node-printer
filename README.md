@@ -5,6 +5,13 @@ Forked from the original node-printer and added a local http server to print lab
 Originally i didnt want to deal with the native zebra browser print sdk , so i've opted to mount a local http server and deal with the communications directly with the printer.
 
 
+### Commands to run:
+
+* npm run preinstall
+* npm run install
+
+* npm run dev - Runs server.js with nodemon
+
 node-printer
 ============
 Native bind printers on POSIX and Windows OS from Node.js, iojs and node-webkit.

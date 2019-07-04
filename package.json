@@ -27,6 +27,8 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
+    "dev": "nodemon server.js",
+    "local": "node server.js",
     "preinstall": "npm install node-pre-gyp",
     "install": "node-pre-gyp install --fallback-to-build",
     "test": "nodeunit test"
@@ -42,5 +44,10 @@
       "type": "BSD"
     }
   ],
-  "main": "./lib/printer"
+  "main": "./lib/printer",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-pre-gyp": "^0.13.0",
+    "nodemon": "^1.19.1"
+  }
 }

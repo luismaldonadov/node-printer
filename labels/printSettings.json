@@ -1,0 +1,32 @@
+{
+  "printers" : [
+    {
+      "modelName": "Zebra GX430t",
+      "osNames": {
+        "unixName": "ZTC-GX430t",
+        "macOsXName": "",
+        "windowsName": "ZDesigner GX430t"
+      },
+      "resolutionDpi": 300
+    }
+  ],
+  "labels": [
+    { "smartphone": {
+        "attributes": {
+        "widthIn": 2.6,
+        "heightIn": 1.0
+        },
+        "maxPrintedAttributes": 6
+      }
+    },
+    {
+      "accesories": {
+        "attributes": {
+          "widthIn": 1,
+          "heightIn": 0.5
+        },
+        "maxPrintedAttributes": 3
+      }  
+    }
+  ]
+}
