@@ -1,3 +1,8 @@
+zebra-local-node-printer
+============
+Forked from the original node-printer and added a local http server to print labels in EPL language for Zebra Printers.
+
+
 node-printer
 ============
 Native bind printers on POSIX and Windows OS from Node.js, iojs and node-webkit.
