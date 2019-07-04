@@ -6,6 +6,8 @@ Originally i didnt want to deal with the native zebra browser print sdk , so i'v
 
 PM2 is needed to monitor the process in local settings.
 
+Feel free to play with this repo, maybe you can expose a local USB printer over a local network or maybe the internet, who knows. :)
+
 ### Print setttings:
 
 * Under labels/printSettings.json there is settings needed for the labels that are passed down to the printer.
