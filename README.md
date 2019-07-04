@@ -6,12 +6,21 @@ Originally i didnt want to deal with the native zebra browser print sdk , so i'v
 
 PM2 is needed to monitor the process in local settings.
 
-### Commands to run:
+### Print setttings:
+
+* Under labels/printSettings.json there is settings needed for the labels that are passed down to the printer.
+* Resolution is mandatory because the commands in Zebra printers are measured in "dots".
+
+### Instalation:
 
 * npm run preinstall
 * npm run install
 
+### Run:
+
 * npm run dev - Runs server.js with nodemon
+or
+* npm run local - Runs server.js with pm2
 
 node-printer
 ============
