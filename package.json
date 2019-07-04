@@ -28,7 +28,7 @@
   },
   "scripts": {
     "dev": "nodemon server.js",
-    "local": "node server.js",
+    "local": "pm2 start server.js",
     "preinstall": "npm install node-pre-gyp",
     "install": "node-pre-gyp install --fallback-to-build",
     "test": "nodeunit test"

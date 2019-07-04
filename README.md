@@ -2,8 +2,9 @@ zebra-local-node-printer
 ============
 Forked from the original node-printer and added a local http server to print labels in EPL language for Zebra Printers.
 
-Originally i didnt want to deal with the native zebra browser print sdk , so i've opted to mount a local http server and deal with the communications directly with the printer.
+Originally i didnt want to deal with the native zebra browser print sdk , so i've opted to mount a local http server and deal with the communications directly with the printer. 
 
+PM2 is needed to monitor the process in local settings.
 
 ### Commands to run:
 

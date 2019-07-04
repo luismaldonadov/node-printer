@@ -44,6 +44,10 @@ function generateSmartphoneEplLabel(data, printSettings) {
   const [ label ] = printSettings.labels.filter(label => Object.keys(label)[0] === "smartphone");
   const  [ printerSettings ] = printSettings.printers.filter(printer => printer.modelName === "Zebra GX430t");
 
+/*
+ EPL needs a strict format , if you add identation here, 
+ the format will get messed up because of EPL guidelines.
+*/
 let printData = `! U1 setvar "media.printmode" "T"
 N
 S4
