@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 require('dotenv').config();
 const port = process.env.SERVER_PORT;
 
-const whitelist = [process.env.DEV_SITE, process.env.PRODUCTION_SITE, process.env.LOCAL_SITE];
+const whitelist = [process.env.LOCAL_TEST,process.env.DEV_SITE, process.env.PRODUCTION_SITE, process.env.LOCAL_SITE];
 
 const corsOptions = {
   origin: function (origin, callback) {
