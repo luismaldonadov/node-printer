@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 function dispatchLabelPrint(data) {
-  console.log(data);
+
   //Read printing settings from json file
   const printSettings = fs.readFileSync(path.resolve(__dirname, "printSettings.json"));
   const printSettingsObject = JSON.parse(printSettings);  
@@ -87,7 +87,7 @@ A20,${currentRowPoints},0,2,1,1,R,\"${data.title}\"\n`;
   }
   
   const dateFooter = `A130,240,0,1,1,1,N,\"${today.toLocaleDateString()} - ${today.toLocaleTimeString()}\"\n`
-  const barcode = `b600,110,Q,s7,\"${data.qrCodeData}\"\nP${data.labelsQuantity}\n`
+  const barcode = `b600,110,Q,s7,\"${data.qrCodeData}\"\nP${data.labelQuantity}\n`
 
   printData = printData.concat(dateFooter);
   printData = printData.concat(barcode);
@@ -140,7 +140,7 @@ A25,${currentRowPoints},0,1,1,1,R,\"${data.title}\"\n`;
 
   const dateFooter = `A25,80,0,1,1,1,N,\"${today.toLocaleDateString()}\"\n`
   const timeFooter = `A25,100,0,1,1,1,N,\"${today.toLocaleTimeString()}\"\n`
-  const barcode = `b200,40,Q,s4,\"${data.qrCodeData}\"\nP${data.labelsQuantity}\n`
+  const barcode = `b200,40,Q,s4,\"${data.qrCodeData}\"\nP${data.labelQuantity}\n`
 
   printData = printData.concat(dateFooter);
   printData = printData.concat(timeFooter);
