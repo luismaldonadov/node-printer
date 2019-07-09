@@ -20,6 +20,8 @@ const corsOptions = {
 
 app.use(bodyParser.json()) // for parsing application/json body rquests
 
+app.options('/printLabel', cors()) // enable pre-flight request for DELETE 
+
 app.post('/printLabel', cors(corsOptions), function (req, res) {
   try {
     labelPrint(req.body);

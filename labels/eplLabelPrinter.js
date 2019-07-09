@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 function dispatchLabelPrint(data) {
-
+  console.log(data);
   //Read printing settings from json file
   const printSettings = fs.readFileSync(path.resolve(__dirname, "printSettings.json"));
   const printSettingsObject = JSON.parse(printSettings);  
@@ -161,7 +161,7 @@ function printZebra(eplPrintData, printerName) {
     printer: printerName,
     type: "RAW",
     success: function () {
-      console.log("Label printed!");
+      console.log("Printer job sent successfully!");
     }
     , error: function (err) { console.log(err); }
   });
